@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>關於作者</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./twicon/twicon.css">
+
+    <link rel="shortcut icon" href="./images/taiwanIcon.png">
+    <link rel="bookmark" href="./images/taiwanIcon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales'],
+                ['1960', 34394],
+                ['1965', 114762],
+                ['1970', 231397],
+                ['1975', 601778],
+                ['1980', 1522459],
+                ['1985', 2533056],
+                ['1990', 4474288],
+                ['1995', 7391062],
+                ['2000', 10328549],
+                ['2005', 12036675],
+                ['2010', 14060345]
+            ]);
+
+            var options = {
+                title: '台灣過去50年GDP變化圖表',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1><i class="twicon-main-island"></i> 台灣經濟發展歷史</h1>
+            <p>過去70年台灣經濟發展的歷史以及相關政策</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html"><i class="twicon-main-island"></i> 首頁</a></li>
+                <li><a href="./agriculture.html"><i class="twicon-couplets"></i> 農業改革</a></li>
+                <li><a href="./industralization.html"><i class="twicon-electric-pot"></i> 工業改革</a></li>
+                <li><a href="./economy.html"><i class="twicon-high-speed-rail"></i> 經濟起飛</a></li>
+                <li><a href="./aboutme.html"><i class="twicon-red-man"></i> 關於作者</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>關於作者</h1>
+            <img src="practise/Pictures/onepiece06_chopper2.png" class="pic">
+            <ul class="bbb">
+                <li>姓名:黃瑋菁</li>
+                <li>座號:10號</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <p>一位熱愛紀錄的歷史作家，致力於創作富有情感和深度的作品。從小對某種特定領域或興趣充滿熱情，作品常常探索愛情、人生、社會問題等，並以其獨特的視角和筆觸，打動讀者的心靈。經歷過各種人生經歷或背景，這些經歷深深影響了他的創作風格和寫作內容。
+
+                除了寫作，作者也擁有其他專業領域，如教育、設計等的背景，這使得他的作品更加多元與豐富。作品曾經獲得某些獎項或榮譽，並被出版社、媒體等高度評價。作為一位不斷學習和成長的作家，作者始終相信寫作是一種探索世界和自我表達的方式，並希望通過文字與讀者建立深刻的聯繫。
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>

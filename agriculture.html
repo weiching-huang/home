@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>農業改革</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./twicon/twicon.css">
+
+    <link rel="shortcut icon" href="./images/taiwanIcon.png">
+    <link rel="bookmark" href="./images/taiwanIcon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales'],
+                ['1960', 34394],
+                ['1965', 114762],
+                ['1970', 231397],
+                ['1975', 601778],
+                ['1980', 1522459],
+                ['1985', 2533056],
+                ['1990', 4474288],
+                ['1995', 7391062],
+                ['2000', 10328549],
+                ['2005', 12036675],
+                ['2010', 14060345]
+            ]);
+
+            var options = {
+                title: '台灣過去50年GDP變化圖表',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1><i class="twicon-main-island"></i> 台灣經濟發展歷史</h1>
+            <p>過去70年台灣經濟發展的歷史以及相關政策</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html"><i class="twicon-main-island"></i> 首頁</a></li>
+                <li><a href="./agriculture.html"><i class="twicon-couplets"></i> 農業改革</a></li>
+                <li><a href="./industralization.html"><i class="twicon-electric-pot"></i> 工業改革</a></li>
+                <li><a href="./economy.html"><i class="twicon-high-speed-rail"></i> 經濟起飛</a></li>
+                <li><a href="./aboutme.html"><i class="twicon-red-man"></i> 關於作者</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>375減租</h1>
+            <p>第一項土地政策是"375減租" 台灣在日本統治下時，由於人口過多，因此擁有大量土地的房東可以決定誰可以租用該地區（需求量很高，但土地屬於一小群人）。 租戶必須將所有農作物交給種子，除了種子部分。
+            </p>
+            <p> 當發生自然災害或農作物歉收時，他們仍然需要向房東提供所有租金。 過去，租金被稱為“鐵租金”，這意味著他們的權利沒有得到保護，即使他們沒有足夠的權利，他們仍然需要放棄一切。</p>
+            <p> 第一項土地政策是改變這種狀況。 中華民國政府過去在中國實行50％的租金政策，這意味著租金不能高於農作物的50％。 1949年4月，台灣省總統陳誠宣布了新的土地政策“降低37.5％的耕地租金法”。</p>
+            <p> 它將50％的租金降低了25％，得出以下公式：</p>
+            <p> 50% x (1-0.25) = 37.5%</p>
+            <div class="list1">
+                <ul>
+                    <li>業主不得提前租用土地租金。 如果農作物歉收，那麼租金應該更低。</li>
+                    <li>租金合同應不少於六年。</li>
+                    <li>合同到期時，如果房東不打算將其帶回去進行自耕農作，則應將其租給租戶。</li>
+                    <li>如果房東計劃出售土地，則租戶優先購買。</li>
+                    <li>每個城鎮都需要建立房租協會來處理土地爭用或爭論。</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>公地放領</h1>
+            <p>以下政策是“出售公共土地”。 根據台灣國家發展委員會的報告，台灣的公共土地是日本政府，私人公司和個人擁有的土地。 土地面積約為1760平方公里。
+                從1951年到1976年，中華民國政府進行了9次銷售的公共土地交易。土地價格是該土地年稻米產量的2.5倍。 人們必須通過農作物或現金支付價格十年。 這項政策的目的是使人民自給自足。
+                這項政策使28.86.27萬戶家庭受益，出售的土地為1397570000平方米。</p>
+        </div>
+        <div class="content">
+            <h1>土地耕作計畫</h1>
+            <p>1953年，即“出售公共土地”兩年後，中華民國政府宣布了一項新的土地政策，即“土地耕種程序”。這項政策使房東僅保留其土地的一部分，然後政府將其拿走並分配給人們。房東從政府那裡得到了一些補償，包括政府擁有的公司股票。
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>經濟起飛</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./twicon/twicon.css">
+
+    <link rel="shortcut icon" href="./images/taiwanIcon.png">
+    <link rel="bookmark" href="./images/taiwanIcon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales'],
+                ['1960', 34394],
+                ['1965', 114762],
+                ['1970', 231397],
+                ['1975', 601778],
+                ['1980', 1522459],
+                ['1985', 2533056],
+                ['1990', 4474288],
+                ['1995', 7391062],
+                ['2000', 10328549],
+                ['2005', 12036675],
+                ['2010', 14060345]
+            ]);
+
+            var options = {
+                title: '台灣過去50年GDP變化圖表',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1><i class="twicon-main-island"></i> 台灣經濟發展歷史</h1>
+            <p>過去70年台灣經濟發展的歷史以及相關政策</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html"><i class="twicon-main-island"></i> 首頁</a></li>
+                <li><a href="./agriculture.html"><i class="twicon-couplets"></i> 農業改革</a></li>
+                <li><a href="./industralization.html"><i class="twicon-electric-pot"></i> 工業改革</a></li>
+                <li><a href="./economy.html"><i class="twicon-high-speed-rail"></i> 經濟起飛</a></li>
+                <li><a href="./aboutme.html"><i class="twicon-red-man"></i> 關於作者</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>今日的台灣</h1>
+            <img src="/practise/images/Group 1.svg" alt="">
+            <p>
+                1980年代後，台灣政府開始實施不同的經濟政策，將產業結構從“重工業”轉變為“技術密集型產業”。 技術密集型行業包括光電技術，計算機，計算機集成製造，半導體行業等。
+                就像以前的加工區一樣，政府為投資者設立了一個專門的區域來建廠。這個特殊的區域稱為“科學園”。
+
+                在科技園區內，有許多品牌生產大量半導體產品。 例如，TSMC，UMC，聯發科等。 這些台灣品牌的技術總部都在新竹科學園區內。
+                據《自由時報》網去年報導，2018年科學園的總收入超過850萬億美元。半導體產業對台灣的GDP貢獻很大。
+            </p>
+        </div>
+        <div class="content">
+            <h2>額外資訊:</h2>
+            <ul class="aaa">
+                <li><a href="#">台灣半導體產業</a></li>
+                <li><a href="#">半導體未來10年</a></li>
+            </ul>
+        </div>
+
+    </main>
+</body>
+
+</html>
